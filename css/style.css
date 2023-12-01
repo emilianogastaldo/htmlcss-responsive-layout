@@ -17,9 +17,10 @@ img{
     max-width: 100%;
 }
 
-iframe{
-    height: 100%;    
+iframe{ 
+    height: auto;
     width: 100%;
+    aspect-ratio: 16 / 9; /*CON QUESTO COMANDO GLI DICO DI MANTERE IL RAPPORTO*/
     display: block;
 }
 ul{
@@ -28,7 +29,7 @@ ul{
 
 /*UTILITIES*/
 .container{
-    max-width: 1400px;
+    max-width: 1090px;
     margin: 0 auto;
 }
 
@@ -60,10 +61,10 @@ ul{
 header{
     text-align: center;
     font-family: 'Nerko One', cursive;
+    font-size: 2rem;
     color: #FF9614;
     text-shadow: 1px 1px 1px gray;
     padding: 10px 20px;
-    font-size: 1.5rem;
 }
 
 /*MAIN*/
@@ -127,7 +128,7 @@ main{
 }
 
 hr{
-    margin: 10px 0;    
+    margin: 20px 0;    
 }
 
 .info-summary{
@@ -150,15 +151,14 @@ hr{
 .btn.btn-social{
     background-color: white;
     box-shadow: 0 0 15px lightgray;
-    height: 50px;
-    padding: 15px 10px;
+    padding: 10px 20px;
     text-align: center;
 }
 
 .social-section img{
     display: block;
     margin: 0 auto;
-    max-height: 100%;  
+    height: 1rem;
 }
 
 .label-social{
@@ -182,7 +182,6 @@ hr{
 .line{
     border: 1px solid currentColor;
     width: 65px;
-    margin: 20px 0;
 }
 
 .presentation img{
@@ -229,6 +228,12 @@ footer a{
 
 
 /*INIZIO I MEDIA QUERY*/
+/*BONUS?*/
+@media screen and (min-width: 475px){
+    .presentation img{
+        float: left;
+    }
+}
 /*MEDIA QUERY PER IL TABLET*/
 @media screen and (min-width: 768px){
     header{
@@ -263,9 +268,7 @@ footer a{
         display: block;
     }
 
-    .presentation img{
-        float: left;
-    }
+    
 
     .presentation::after{
         content:'';
@@ -276,8 +279,14 @@ footer a{
 
 /*MEDIA QUERY PER IL DESKTOP*/
 @media screen and (min-width:992px){
+
     .titolo-main h2{
-        font-size: 3rem;
+        font-size: 2.8rem;
+    }
+
+    iframe{
+        height: 100%;
+        width: auto;
     }
 
     .pastry-summary{
@@ -289,10 +298,10 @@ footer a{
     }
 
     .card-info{
-        flex-basis: 40%;
+        flex-basis: 30%;
     }
     .card-video{
-        flex-basis: 60%;
+        flex-basis: 70%;
     }
 
     .social-section img{
@@ -308,5 +317,4 @@ footer a{
         justify-content: space-between;
         text-align: left;
     }
-
 }
