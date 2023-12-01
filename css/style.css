@@ -12,8 +12,11 @@ body{
 }
 a{
     text-decoration: none;
+    color: black;
 }
-
+img{
+    max-width: 100%;
+}
 ul{
     list-style-type: none;
 }
@@ -128,4 +131,29 @@ hr{
     flex-direction: column;
     gap: 20px;
     padding: 20px 0;
+}
+
+/*SEZIONE SOCIAL*/
+.social-section{
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn.btn-social{
+    background-color: white;
+    box-shadow: 0 0 5px lightgray;
+    height: 50px;
+    padding: 15px 20px;
+}
+
+.social-section img{
+    max-height: 100%;
+    vertical-align: middle;    
+}
+
+.label-social{
+    color:black;
+    display: none;
+    vertical-align: middle;
 }
