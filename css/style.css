@@ -8,12 +8,35 @@
 /*GENERICS*/
 body{
     font-family: 'Montserrat', sans-serif;
+    
+}
+a{
+    text-decoration: none;
 }
 /*UTILITIES*/
 .container{
     max-width: 1400px;
     margin: 0 auto;
 }
+
+.text-orange{
+    color: #F7972E;
+}
+.text-gray{
+    opacity: 0.3;
+}
+
+.bg-orange{
+    background-color: #F7972E;
+    color: white;
+}
+
+.btn{
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-weight: 700;
+}
+
 /*HEADER*/
 header{
     text-align: center;
@@ -21,8 +44,26 @@ header{
     color: #FF9614;
     text-shadow: 1px 1px 1px gray;
     padding: 10px 0;
+    font-size: 1.5rem;
 }
 
+/*MAIN*/
 main{
     background-color: #F6F5F3;
+    padding: 15px;
+}
+
+.titolo-main{
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h2{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #4E3969;
+}
+.rate span{
+    margin-right: 10px;
 }
