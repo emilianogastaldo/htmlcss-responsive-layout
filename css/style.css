@@ -13,11 +13,17 @@ body{
 a{
     text-decoration: none;
 }
+
+ul{
+    list-style-type: none;
+}
+
 /*UTILITIES*/
 .container{
     max-width: 1400px;
     margin: 0 auto;
 }
+
 
 .text-orange{
     color: #F7972E;
@@ -36,7 +42,12 @@ a{
     border-radius: 25px;
     font-weight: 700;
 }
-
+.kcal{
+    background-color: #7B69A2;
+    color: white;
+    padding: 4px;
+    border-radius: 5px;
+}
 /*HEADER*/
 header{
     text-align: center;
@@ -66,4 +77,55 @@ h2{
 }
 .rate span{
     margin-right: 10px;
+}
+
+.pastry-summary{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-shadow: 0 0 5px lightgray;
+}
+
+.card-video, .card-info{
+    flex-basis: 100%;
+}
+
+iframe{
+    width: 100%;
+    display: block;
+}
+/*LAVORO SULLA CARD INFO*/
+.card-info{
+    background-color: white;
+    padding: 30px;
+}
+
+.info-box{
+    background-color: #F6F5F9;
+    padding: 15px;
+    font-size: .8rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.top-info-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-info-box p:last-child{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+hr{
+    margin: 10px 0;
+    
+}
+
+.info-summary{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
 }
