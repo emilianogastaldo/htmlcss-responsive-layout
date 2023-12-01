@@ -56,7 +56,7 @@ header{
     font-family: 'Nerko One', cursive;
     color: #FF9614;
     text-shadow: 1px 1px 1px gray;
-    padding: 10px 0;
+    padding: 10px 20px;
     font-size: 1.5rem;
 }
 
@@ -72,8 +72,8 @@ main{
     justify-content: space-between;
     align-items: center;
 }
-h2{
-    font-size: 2rem;
+.titolo-main h2{
+    font-size: 1.5rem;
     font-weight: 800;
     color: #4E3969;
 }
@@ -98,7 +98,6 @@ iframe{
     width: 100%;
     display: block;
 }
-
 
 /*LAVORO SULLA CARD INFO*/
 .card-info{
@@ -125,22 +124,24 @@ iframe{
 }
 
 hr{
-    margin: 10px 0;
-    
+    margin: 10px 0;    
 }
 
 .info-summary{
     display: flex;
     flex-direction: column;
-    gap: 20px;
     padding: 20px 0;
+}
+.info-summary li{
+    padding: 10px;
 }
 
 /*SEZIONE SOCIAL*/
 .social-section{
-    padding: 40px 0;
+    padding: 40px 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    gap: 10px;
 }
 
 .btn.btn-social{
@@ -151,6 +152,8 @@ hr{
 }
 
 .social-section img{
+    display: block;
+    margin: 0 auto;
     max-height: 100%;
     vertical-align: middle;    
 }
@@ -164,11 +167,12 @@ hr{
 /*BANNER*/
 .adv-section{
     display: none;
+    margin-bottom: 20px;
 }
 
 /*SEZIONE RECIPE*/
 .presentation h3{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: 500;
 }
 
@@ -179,10 +183,10 @@ hr{
 }
 
 .presentation img{
-    /*float:left;*/
     display: block;
     width: 300px;
-    margin: 20px auto;
+    margin-right: 10px;
+    margin-bottom: 10px;
     box-shadow: 0 0 15px lightgray;
 }
 .presentation p{
@@ -217,4 +221,52 @@ footer a{
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
+}
+
+
+
+/*INIZIO I MEDIA QUERY*/
+
+@media screen and (min-width: 768px){
+    header{
+        text-align: left;
+    }
+
+    main{
+        padding: 40px;
+    }
+
+    .titolo-main h2{
+        font-size: 2rem;
+    }
+    .titolo-main h2::after{
+        content: ' (Dolce Tradizionale)';
+    }
+
+    .info-summary{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .info-summary li{        
+        flex-basis: calc(100% / 3);
+    }
+     
+    .social-section a{
+        flex-basis: calc(100% / 5);        
+    }
+    
+    .adv-section{
+        display: block;
+    }
+
+    .presentation img{
+        float: left;
+    }
+
+    .presentation::after{
+        content:'';
+        clear: both;
+        display: block;
+    }
 }
