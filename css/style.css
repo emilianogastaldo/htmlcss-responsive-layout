@@ -16,6 +16,12 @@ a{
 img{
     max-width: 100%;
 }
+
+iframe{
+    height: 100%;    
+    width: 100%;
+    display: block;
+}
 ul{
     list-style-type: none;
 }
@@ -94,10 +100,7 @@ main{
     flex-basis: 100%;
 }
 
-iframe{
-    width: 100%;
-    display: block;
-}
+
 
 /*LAVORO SULLA CARD INFO*/
 .card-info{
@@ -148,7 +151,8 @@ hr{
     background-color: white;
     box-shadow: 0 0 15px lightgray;
     height: 50px;
-    padding: 15px 20px;
+    padding: 15px 10px;
+    text-align: center;
 }
 
 .social-section img{
@@ -201,7 +205,7 @@ footer{
     color: white;
     border-bottom: 1px solid currentColor;
 
-    padding: 30px 0;
+    padding: 30px 20px;
 
     display: flex;
     flex-direction: column;
@@ -225,7 +229,7 @@ footer a{
 
 
 /*INIZIO I MEDIA QUERY*/
-
+/*MEDIA QUERY PER IL TABLET*/
 @media screen and (min-width: 768px){
     header{
         text-align: left;
@@ -268,4 +272,41 @@ footer a{
         clear: both;
         display: block;
     }
+}
+
+/*MEDIA QUERY PER IL DESKTOP*/
+@media screen and (min-width:992px){
+    .titolo-main h2{
+        font-size: 3rem;
+    }
+
+    .pastry-summary{
+        flex-wrap: nowrap;
+    }
+
+    .info-summary{
+        flex-direction: column;
+    }
+
+    .card-info{
+        flex-basis: 40%;
+    }
+    .card-video{
+        flex-basis: 60%;
+    }
+
+    .social-section img{
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .label-social{
+        display: inline-block;
+    }
+
+    footer{
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
+
 }
