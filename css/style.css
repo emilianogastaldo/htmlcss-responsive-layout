@@ -82,6 +82,8 @@ h2{
     margin-right: 10px;
 }
 
+
+/*INIZIO LA SCHEDA DELLA RICETTA*/
 .pastry-summary{
     display: flex;
     flex-direction: row;
@@ -97,6 +99,8 @@ iframe{
     width: 100%;
     display: block;
 }
+
+
 /*LAVORO SULLA CARD INFO*/
 .card-info{
     background-color: white;
@@ -135,7 +139,7 @@ hr{
 
 /*SEZIONE SOCIAL*/
 .social-section{
-    padding: 20px 0;
+    padding: 40px 0;
     display: flex;
     justify-content: space-around;
 }
@@ -157,3 +161,11 @@ hr{
     display: none;
     vertical-align: middle;
 }
+
+/*BANNER*/
+.adv-section{
+    display: none;
+}
+
+/*SEZIONE RECIPE*/
+
