@@ -1,7 +1,28 @@
 /*CSS RESET*/
-
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+/*GENERICS*/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+/*UTILITIES*/
+.container{
+    max-width: 1400px;
+    margin: 0 auto;
+}
+/*HEADER*/
+header{
+    text-align: center;
+    font-family: 'Nerko One', cursive;
+    color: #FF9614;
+    text-shadow: 1px 1px 1px gray;
+    padding: 10px 0;
+}
+
+main{
+    background-color: #F6F5F3;
 }
